@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/GameStyle.css" />
+  <title>Schiffeversenken</title>
+</head>
+
+<body onload="getArraysFromStorage();">
+  <header>
+    <p>Battleships</p>
+  </header>
+  <div id="winModal" class="modal">
+    <div id="winModalContent" class="modalContent">
+
+    </div>
+
+  </div>
+  <table id="playerFieldTbl"></table>
+  <table id="botFieldTbl"></table>
+
+  <script src="../Scripts/Game.js"></script>
+  <script src="../Scripts/RenderFields.js"></script>
+  <script src="../Scripts/TestFunctions.js"></script>
+  <script src="../Scripts/ModalText.js"></script>
+  <footer>
+    <p>&copy; 2023 Tim Raschkowski. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+
+</html>

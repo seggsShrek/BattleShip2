@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.miss {
+    background-color: gray !important;
+}
+
+.hit {
+    background-color: red !important;
+}
+
+.water {
+    background-color: lightskyblue;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+  }
+
+#playerFieldTbl {
+    border-collapse: collapse;
+    border-width: 4px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#playerFieldTbl td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #888;
+}
+
+#playerFieldTbl td.ship {
+    background-color: #555;
+}
+
+#botFieldTbl {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-width: 4px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#botFieldTbl td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #888;
+}
+
+#botFieldTbl td.ship {
+    background-color: lightskyblue;
+}
+
+#restartBtn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .modalContent {
+        width: 200px;
+      }
+
+    #shipOrientation {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    #playerFieldTbl td {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    #botFieldTbl td {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    #restartBtn {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

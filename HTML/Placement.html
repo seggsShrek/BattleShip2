@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/PlacementStyle.css" />
+  <title>Schiffeversenken</title>
+</head>
+
+<body onload="fillRuleModal()">
+  <header>
+    <button id="ruleButton">Regeln</button>
+  </header>
+  <div id="ruleModal" class="modal">
+    <div id="ruleModalContent" class="modalContent">
+
+    </div>
+
+  </div>
+
+  <button id="shipOrientation" onclick="rotateShip()">Ausrichtung Ändern</button>
+  <div id="currOrientation">
+    <p id="orientation">Ausrichtung: Horizontal</p>
+  </div>
+    <table id="placeShipTbl"></table>
+    <button id="rndBtn" onclick="simulateUserClicks(500)">Zufällig platzieren</button>
+  <button id="startGameBtn" type="submit" onclick="startGame()">Spiel Starten</button>
+  <footer>
+    <p>&copy; 2023 Tim Raschkowski. Alle Rechte vorbehalten.</p>
+  </footer>
+  <script src="../Scripts/Placement.js"></script>
+  <script src="../Scripts/BotField.js"></script>
+  <script src="../Scripts/ModalText.js"></script>
+</body>
+
+</html>
